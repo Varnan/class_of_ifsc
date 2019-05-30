@@ -1,0 +1,8 @@
+*.pyc
+*.py~
+.idea/
+*.DS_Store
+staticstorage/
+*/migrations/*
+*/local_settings.py
+

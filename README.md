@@ -21,7 +21,7 @@ Please use PostgreSQL as your backend DB. You may not be able to load the entire
 
 # Introduction
 
-Djangi REST service for gets details of all branches of the banks in India. 
+Djangi REST service for gets details of banks in India. 
 
 
 ## Requirements
