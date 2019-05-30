@@ -35,10 +35,10 @@ Djangi REST service for gets details of banks in India.
     Navigate into the diretory [cd class_of_ifsc]
     Create a virtualenv
     Install the dependencies on virtaulenv [pip install -r requirement.txt]
-    Update the local_settings.py file with your keys from Facebook.
     Navigate into the class_of_ifsc directory [cd class_of_ifsc]
     Start the backend server [python manage.py runserver]
-    Visit the application on the browser - http:localhost:8000
+    Dump the sql db from the above DATA SOURCE
+    Visit the application on the browser - http:localhost:8000 or Use the postman collection
 
 ## Built With
     Python - A programming language that lets you work quickly and integrate systems more effectively.
