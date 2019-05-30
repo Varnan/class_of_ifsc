@@ -25,7 +25,7 @@ Djangi REST service for gets details of banks in India.
 
 
 ## Requirements
-    pip install -r requirement.txt
+    pip install -r requirements.txt
 
 ## Database
     PostgreSQL
@@ -34,7 +34,7 @@ Djangi REST service for gets details of banks in India.
     Clone the project to your machine [https://github.com/Varnan/class_of_ifsc.git]
     Navigate into the diretory [cd class_of_ifsc]
     Create a virtualenv
-    Install the dependencies on virtaulenv [pip install -r requirement.txt]
+    Install the dependencies on virtaulenv [pip install -r requirements.txt]
     Navigate into the class_of_ifsc directory [cd class_of_ifsc]
     Start the backend server [python manage.py runserver]
     Dump the sql db from the above DATA SOURCE
