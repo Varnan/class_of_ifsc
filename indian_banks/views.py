@@ -3,7 +3,10 @@ from __future__ import unicode_literals
 
 from django.shortcuts import render
 from django import http
-import httplib
+try:
+    import httplib
+except:
+    import http.client as httplib
 
 from rest_framework import status
 from rest_framework.response import Response
