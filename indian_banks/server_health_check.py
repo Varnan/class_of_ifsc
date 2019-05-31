@@ -1,6 +1,10 @@
 # server_health_check.py
 import logging
-import httplib
+try:
+    import httplib
+except:
+    import http.client as httplib
+    
 from django.test import Client
 logger = logging.getLogger('health')
 
