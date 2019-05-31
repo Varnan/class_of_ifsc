@@ -22,11 +22,9 @@ def ServerLanding(request):
 # URL : /health or /health/
 def HealthChecking(request):
     if not server_health_check.page_response('/'):
-        print "No Lading page"
         return http.HttpResponse(status=httplib.SERVICE_UNAVAILABLE)
 
     if not server_health_check.migrations_have_applied():
-        print "No migrations_have_applied"
         return http.HttpResponse(status=httplib.SERVICE_UNAVAILABLE)
 
     return http.HttpResponse()
