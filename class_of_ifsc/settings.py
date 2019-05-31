@@ -156,11 +156,10 @@ USE_TZ = True
 
 SITE_HEADER = "Class Of IFSC"
 
-import dj_database_url
-db_from_env = dj_database_url.config()
-DATABASES['default'].update(db_from_env)
+
 
 import django_heroku
 django_heroku.settings(locals())
 
-
+import dj_database_url
+DATABASES['default'] = dj_database_url.config(conn_max_age=600, ssl_require=True)
