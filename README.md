@@ -15,6 +15,9 @@ Here are steps on how you can get a django app running in Heroku in a few minute
 
 Heroku : https://devcenter.heroku.com/articles/getting-started-with-python
 
+Heroku Django : https://devcenter.heroku.com/articles/django-memcache
+
+
 
 Please use PostgreSQL as your backend DB. You may not be able to load the entire dataset in the free tier - you can make do with 10000 rows. Hosting in Heroku and using PostgreSQL are important parts of the coding test - the objective is to see if you can learn a new platform and be productive quickly.
 
