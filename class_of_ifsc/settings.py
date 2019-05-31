@@ -24,10 +24,10 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'mzatybzka7j&wwvz%rgj4uw&+!v8@#y0v#m3k^ouxp#7f@v292'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 TEMPLATE_DEBUG = False
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['*','class-of-ifsc.herokuapp.com']
 
 # Application definition
 DJANGO_APPS = (
@@ -86,14 +86,21 @@ WSGI_APPLICATION = 'class_of_ifsc.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/1.11/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#         'NAME': 'indian_banks',
+#         'USER': 'test_rayuser',
+#         'PASSWORD': 'testRaybaby@2018',
+#         'HOST': 'localhost',
+#         'PORT': '5432',
+#     }
+# }
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'indian_banks',
-        'USER': 'test_rayuser',
-        'PASSWORD': 'testRaybaby@2018',
-        'HOST': 'localhost',
-        'PORT': '5432',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
 
@@ -148,6 +155,8 @@ USE_L10N = True
 USE_TZ = True
 
 SITE_HEADER = "Class Of IFSC"
+
+
 
 import django_heroku
 django_heroku.settings(locals())

@@ -6,4 +6,5 @@ staticstorage/
 */migrations/*
 */local_settings.py
 .env
+*.sqlite3
 
