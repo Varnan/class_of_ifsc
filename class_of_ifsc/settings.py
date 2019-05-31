@@ -27,7 +27,7 @@ SECRET_KEY = 'mzatybzka7j&wwvz%rgj4uw&+!v8@#y0v#m3k^ouxp#7f@v292'
 DEBUG = False
 TEMPLATE_DEBUG = False
 
-ALLOWED_HOSTS = ['*','class-of-ifsc.herokuapp.com']
+ALLOWED_HOSTS = ['class-of-ifsc.herokuapp.com']
 
 # Application definition
 DJANGO_APPS = (
@@ -156,7 +156,9 @@ USE_TZ = True
 
 SITE_HEADER = "Class Of IFSC"
 
-
+import dj_database_url
+db_from_env = dj_database_url.config()
+DATABASES['default'].update(db_from_env)
 
 import django_heroku
 django_heroku.settings(locals())
