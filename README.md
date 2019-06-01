@@ -48,4 +48,7 @@ Djangi REST service for gets details of banks in India.
     Django - A high-level Python Web framework that encourages rapid development and clean, pragmatic design.
 
 ## Postman Collection
-    https://www.getpostman.com/collections/73146afabb6e0545df3f
+    Local : https://www.getpostman.com/collections/73146afabb6e0545df3f
+
+    Heroku : https://www.getpostman.com/collections/a59dffbaa318ca6feba8
+
