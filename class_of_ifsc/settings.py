@@ -27,7 +27,7 @@ SECRET_KEY = 'mzatybzka7j&wwvz%rgj4uw&+!v8@#y0v#m3k^ouxp#7f@v292'
 DEBUG = False
 TEMPLATE_DEBUG = False
 
-ALLOWED_HOSTS = ['class-of-ifsc.herokuapp.com']
+ALLOWED_HOSTS = ['*']
 
 # Application definition
 DJANGO_APPS = (
@@ -86,16 +86,16 @@ WSGI_APPLICATION = 'class_of_ifsc.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/1.11/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'indian_banks',
-        'USER': 'test_rayuser',
-        'PASSWORD': 'testRaybaby@2018',
-        'HOST': 'localhost',
-        'PORT': '5432',
-    }
-}
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#         'NAME': 'indian_banks',
+#         'USER': 'test_rayuser',
+#         'PASSWORD': 'testRaybaby@2018',
+#         'HOST': 'localhost',
+#         'PORT': '5432',
+#     }
+# }
 
 
 # Password validation
@@ -154,5 +154,5 @@ SITE_HEADER = "Class Of IFSC"
 import django_heroku
 django_heroku.settings(locals())
 
-import dj_database_url
-DATABASES['default'] = dj_database_url.config(conn_max_age=600, ssl_require=True)
+# import dj_database_url
+# DATABASES['default'] = dj_database_url.config(conn_max_age=600, ssl_require=True)
